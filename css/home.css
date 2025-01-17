@@ -97,6 +97,7 @@
 
 body {
   margin: 0;
+  height: 100%;
   font-family: var(--bs-body-font-family);
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
@@ -644,6 +645,9 @@ progress {
   margin-right: auto;
   margin-left: auto;
 }
+.imag-main{
+  width: 180px;
+  position: absolute;}
 
 @media (min-width: 576px) {
   .container-sm, .container {
@@ -2564,25 +2568,25 @@ textarea.form-control-lg {
   padding-right: 3rem;
 }
 
-.input-group:not(.has-validation) > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating),
+/* .input-group:not(.has-validation) > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating),
 .input-group:not(.has-validation) > .dropdown-toggle:nth-last-child(n+3),
 .input-group:not(.has-validation) > .form-floating:not(:last-child) > .form-control,
 .input-group:not(.has-validation) > .form-floating:not(:last-child) > .form-select {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
-}
-.input-group.has-validation > :nth-last-child(n+3):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating),
+} */
+/* .input-group.has-validation > :nth-last-child(n+3):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating),
 .input-group.has-validation > .dropdown-toggle:nth-last-child(n+4),
 .input-group.has-validation > .form-floating:nth-last-child(n+3) > .form-control,
 .input-group.has-validation > .form-floating:nth-last-child(n+3) > .form-select {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
-}
-.input-group > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
-  margin-left: -1px;
+} */
+/* .input-group > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) { */
+  /* margin-left: -1px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-}
+} */
 .input-group > .form-floating:not(:first-child) > .form-control,
 .input-group > .form-floating:not(:first-child) > .form-select {
   border-top-left-radius: 0;
@@ -3286,7 +3290,7 @@ textarea.form-control-lg {
   margin-left: 0;
 }
 
-.dropdown-menu {
+/* .dropdown-menu {
   --bs-dropdown-zindex: 1000;
   --bs-dropdown-min-width: 10rem;
   --bs-dropdown-padding-x: 0;
@@ -3306,11 +3310,11 @@ textarea.form-control-lg {
   --bs-dropdown-link-hover-color: #1e2125;
   --bs-dropdown-link-hover-bg: #e9ecef;
   --bs-dropdown-link-active-color: #fff;
-  --bs-dropdown-link-active-bg: #64a19d;
+  --bs-dropdown-link-active-bg: white
   --bs-dropdown-link-disabled-color: #adb5bd;
   --bs-dropdown-item-padding-x: 1rem;
   --bs-dropdown-item-padding-y: 0.25rem;
-  --bs-dropdown-header-color: #6c757d;
+  --bs-dropdown-header-color: #whute;
   --bs-dropdown-header-padding-x: 1rem;
   --bs-dropdown-header-padding-y: 0.5rem;
   position: absolute;
@@ -3327,28 +3331,28 @@ textarea.form-control-lg {
   background-clip: padding-box;
   border: var(--bs-dropdown-border-width) solid var(--bs-dropdown-border-color);
   border-radius: var(--bs-dropdown-border-radius);
-}
-.dropdown-menu[data-bs-popper] {
+} */
+/* .dropdown-menu[data-bs-popper] {
   top: 100%;
   left: 0;
   margin-top: var(--bs-dropdown-spacer);
-}
-
+} */
+/* 
 .dropdown-menu-start {
   --bs-position: start;
 }
 .dropdown-menu-start[data-bs-popper] {
   right: auto;
   left: 0;
-}
+} */
 
-.dropdown-menu-end {
+/* .dropdown-menu-end {
   --bs-position: end;
 }
 .dropdown-menu-end[data-bs-popper] {
   right: 0;
   left: auto;
-}
+} */
 
 @media (min-width: 576px) {
   .dropdown-menu-sm-start {
@@ -7894,8 +7898,8 @@ textarea.form-control-lg {
 }
 
 .px-4 {
-  padding-right: 1.5rem !important;
-  padding-left: 1.5rem !important;
+  /* padding-right: 1.5rem !important; */
+  /* padding-left: 1.5rem !important; */
 }
 
 .px-5 {
@@ -8247,7 +8251,7 @@ textarea.form-control-lg {
 
 .text-white-50 {
   --bs-text-opacity: 1;
-  color: rgba(255, 255, 255, 0.5) !important;
+  color:white !important;
 }
 
 .text-reset {
@@ -10980,8 +10984,7 @@ body {
 }
 
 #mainNav {
-  min-height: 3.5rem;
-  background-color: #fff;
+  min-height: 4.7rem;
 }
 #mainNav .navbar-toggler {
   font-size: 80%;
@@ -11069,7 +11072,7 @@ body {
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url('/html/bg.jpg') ;
+  background-image: url("/html/bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -11144,12 +11147,10 @@ body {
 
 
 .footer {
-  padding: 5rem 0;
+  padding: 1rem 0;
 }
-.imag-main{
-width: 180px;
-margin-top: 0%;
-margin-bottom: 0%;}
+
+
 
 .mindmap{
   display: flex;
