@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
             let users = JSON.parse(localStorage.getItem("users")) || [];
             users.push({ email, password, firstName, lastName });
             localStorage.setItem("users", JSON.stringify(users));
-            window.location.href = "/html/login.html";
+            window.location.href = "login.html";
         }
     });
 });
